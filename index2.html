@@ -1,0 +1,63 @@
+html<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slider</title>
+<style>
+    .slider {
+        width: 100px;
+        overflow: hidden;
+    }
+    .cards {
+        display: flex;
+        transition: transform 0.5s;
+    }
+    .card {
+        width: 100px;
+        height: 150px;
+        background: lightblue;
+        margin-right: 10px;
+    }
+    button {
+        margin-top: 10px;
+    }
+</style>
+</head>
+<body>
+<div class="slider">
+    <div class="cards">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </div>
+</div>
+<button onclick="slideLeft()">Previous</button>
+<button onclick="slideRight()">Next</button>
+<script>
+    const slider = document.querySelector('.slider');
+    const cards = document.querySelector('.cards');
+    const cardWidth = document.querySelector('.card').offsetWidth;
+    let offset = 0;
+
+    function slideLeft() {
+        if (offset < 0) {
+            offset += cardWidth + 10;
+            cards.style.transform = translateX('${offset}px');
+        }
+    }
+
+    function slideRight() {
+        const visibleCards = Math.floor(slider.offsetWidth / (cardWidth + 10));
+        const totalCards = document.querySelectorAll('.card').length;
+        if (offset > -(totalCards - visibleCards) * (cardWidth + 10)) {
+            offset -= cardWidth + 10;
+            cards.style.transform = translateX('${offset}px');
+        }
+    }
+</script>
+</body>
+</html>

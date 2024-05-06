@@ -1,0 +1,876 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Golos+Text:wght@400..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* HEADER */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 26px;
+    padding-bottom: 132px;
+    background-image: url('images/Cooper Union Stamp Paper.png'), url('images/image 23.png');
+    background-position: center center, center center;
+    background-size: cover, auto;
+    background-repeat: no-repeat, repeat;
+
+    /* background: url("images/image 23.png"); */
+    z-index: -2;
+}
+
+/* .header::before {
+    content: '';
+    position: absolute;
+    width: 394px;
+    height: 112px;
+    top: 0;
+    left: 0;
+    background: url('images/Cooper Union Stamp Paper.png');
+    z-index: 1;
+    
+} */
+
+.header__logo {
+    /* Клуб четырех коней */
+    margin-left: 5px;
+    padding-bottom: 62px;
+    display: flex;
+    font-family: 'Golos Text';
+    font-weight: bold;
+    font-size: 16.6513px;
+    line-height: 108%;
+    text-transform: uppercase;
+    color: #595653;
+}
+
+.header__row {
+    position: relative;
+    width: 542px;
+    height: 444px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__title {
+    padding-bottom: 24px;
+    font-family: 'Merriweather';
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 110%;
+    text-transform: uppercase;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #313131;
+}
+
+.header__title:last-child div {
+    text-align: right;
+}
+
+.header__title:first-child div {
+    text-align: center;
+}
+
+
+.header__subTitle {
+    /* Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам */
+    padding-bottom: 40px;
+    font-family: 'Golos Text';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #313131;
+}
+
+.header__btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__btn1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    width: 263px;
+    height: 72px;
+
+    background: #1F1F1F;
+    border-radius: 66px;
+
+    font-family: 'Golos Text';
+
+    color: #FFFFFF;
+
+
+
+}
+
+.header__btn2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Golos Text';
+    color: #1F1F1F;
+    width: 263px;
+    height: 72px;
+
+    border: 2px solid #1F1F1F;
+    border-radius: 66px;
+
+}
+
+.header__before1 {
+    position: relative;
+}
+
+.header__before2::before {
+    content: '';
+    position: absolute;
+    width: 1400px;
+    height: 430px;
+    top: 270px;
+    right: -35px;
+    background: url('images/city.png');
+    z-index: 2;
+}
+
+.header__before1::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 220px;
+    top: 358px;
+    right: -340px;
+    background: url('images/kon.png');
+    z-index: 3;
+
+}
+
+/* .header__before2 {
+    position: relative;
+} */
+
+.header__before2::after {
+    content: '';
+    position: absolute;
+    width: 85px;
+    height: 123px;
+    top: 560px;
+    right: 45px;
+    background: url('images/figure4.png');
+    z-index: 3;
+
+}
+
+.header__before3 {
+    position: relative;
+}
+
+.header__before3::after {
+    content: '';
+    position: absolute;
+    width: 105px;
+    height: 255px;
+    top: 140px;
+    right: -95px;
+    background: url('images/qwin.png');
+    z-index: 2;
+
+}
+
+.header__before3::before {
+    content: '';
+    position: absolute;
+    width: 125px;
+    height: 255px;
+    top: 40px;
+    right: -455px;
+    background: url('chess.png');
+    z-index: 2;
+
+}
+
+.header__before4 {
+    position: relative;
+}
+
+.header__before4::after {
+    content: '';
+    position: absolute;
+    width: 660px;
+    height: 660px;
+    top: -130px;
+    right: -610px;
+    background: url('Ellipse 6.png');
+    z-index: 1;
+
+}
+
+.header__before4::before {
+    content: '';
+    position: absolute;
+    width: 760px;
+    height: 760px;
+    top: -130px;
+    right: -660px;
+    background: url('Group.png') no-repeat;
+    transform: rotate(-3deg);
+    opacity: 15%;
+    z-index: 2;
+
+}
+
+.header__before {
+    position: relative;
+}
+
+.header__before::after {
+    content: '';
+    position: absolute;
+    width: 1400px;
+    height: 760px;
+    top: 136px;
+    right: -775px;
+    background: url('path.png') no-repeat;
+    z-index: 4;
+
+}
+
+/* .header__before {
+    content: '';
+    position: absolute;
+    width: 1400px;
+    height: 760px;
+    top: 136px;
+    right: -775px;
+    background: url('images/Cooper Union Stamp Paper.png') no-repeat ;
+    opacity: 40%;
+    z-index: 4;
+
+} */
+
+
+
+.runningLine__container {
+    padding: 15px 0;
+    width: 100%;
+    background: #F54932;
+
+}
+
+.runningLine {
+    font-size: 22px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    white-space: nowrap;
+    animation: begushchaya-stroka 20s linear infinite;
+    /* Измените значение времени и типа анимации по желанию */
+}
+
+@keyframes begushchaya-stroka {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.content {
+    display: flex;
+}
+
+.header__before1 {
+    width: 100px;
+    height: 100px;
+
+}
+
+.block {
+    padding: 80px 0 64px 0;
+}
+
+
+.block__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.block__img1 {
+    position: relative;
+}
+/* .block__img1::after {
+    content: '';
+    position: absolute;
+    width: 660px;
+    height: 660px;
+    top: -130px;
+    right: -150px;
+    background: url('images/block2__img/b1.png');
+    opacity: 50%;
+    z-index: 9;
+} */
+
+.block__img1::before {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 440px;
+    top: 40px;
+    right: -60px;
+    background: url('images/block2__img/b2.png');
+    opacity: 90%;
+    z-index: 2;
+}
+
+.block__img2 {
+    position: relative;
+}
+
+.block__img2::after {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 240px;
+    top: 26px;
+    right: -100px;
+    background: url('images/block2__img/b3.png');
+    z-index: 3;
+}
+
+.block__img2::before {
+    content: '';
+    position: absolute;
+    width: 515px;
+    height: 340px;
+    top: -24px;
+    right: -115px;
+    background: url('images/block2__img/b4.png');
+    z-index: 4;
+}
+
+
+.block__img3 {
+    position: relative;
+}
+
+.block__img3::after {
+    content: '';
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    top: 76px;
+    right: -40px;
+    background: url('images/block2__img/b5.png');
+    z-index: 5;
+}
+
+.block__img3::before {
+    content: '';
+    position: absolute;
+    width: 235px;
+    height: 210px;
+    top: 285px;
+    right: 150px;
+    background: url('images/block2__img/b6.png');
+    z-index: 6;
+}
+
+.block__img4 {
+    position: relative;
+}
+
+.block__img4::after {
+    content: '';
+    position: absolute;
+    width: 160px;
+    height: 190px;
+    top: 330px;
+    right: 150px;
+    background: url('images/block2__img/b7.png');
+    z-index: 7;
+}
+
+.block__img4::before {
+    content: '';
+    position: absolute;
+    width: 295px;
+    height: 210px;
+    top: 321px;
+    right: -120px;
+    background: url('images/block2__img/b8.png');
+    z-index: 8;
+}
+
+
+.block__text {
+    font-family: 'Merriweather';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 135%;
+    /* or 49px */
+    text-transform: uppercase;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: #313131;
+}
+
+.block__text span {
+    color: #F54932;
+    ;
+}
+
+
+
+.block1__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {}
+
+.block1__img {
+    width: 30%;
+}
+
+.block1__text {
+    width: 50%;
+}
+
+.block1__title {
+    width: 650px;
+    padding-bottom: 60px;
+    font-family: 'Merriweather';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 135%;
+    /* or 49px */
+    text-transform: uppercase;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #313131;
+
+}
+
+.block1__title span {
+    color: #F54932;
+}
+
+.block1__column {
+    width: 414px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.block1__column div {
+    height: 56px;
+    width: 300px;
+    font-size: 20px;
+    font-family: 'Golos Text';
+}
+
+.block1__column div:last-child {
+    border-left: 2px solid#D0D0D0;
+    line-height: 2;
+    padding-left: 16px;
+    font-weight: bold;
+
+
+}
+
+.block1__column div:nth-last-child(2),
+.block1__column div:nth-last-child(3),
+.block1__column div:nth-last-child(4),
+.block1__column div:nth-last-child(5) {
+    border-left: 2px solid#D0D0D0;
+    border-bottom: 2px solid#D0D0D0;
+    line-height: 2;
+    padding-left: 16px;
+    font-weight: bold;
+
+}
+
+.block1__column div:first-child {
+    border-bottom: 2px solid#D0D0D0;
+    line-height: 2;
+    color: #313131;
+
+
+}
+
+.block1__column div:nth-last-child(7),
+.block1__column div:nth-last-child(8),
+.block1__column div:nth-last-child(9) {
+    border-bottom: 2px solid#D0D0D0;
+    line-height: 2;
+    color: #313131;
+
+}
+
+.block1__column div:nth-last-child(6) {
+    line-height: 2;
+    color: #313131;
+}
+
+
+
+.block1__subT {
+    width: 704px;
+    padding-top: 48px;
+    font-family: 'Golos Text';
+    font-size: 20px;
+    line-height: 120%;
+    color: #3057A2;
+
+}
+
+.block2 {
+    padding-top: 200px;
+}
+
+.block2__title {
+    padding-bottom: 54px;
+
+}
+
+.block2__txt {
+    font-family: 'Merriweather';
+    font-size: 54px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #313131;
+
+}
+
+.block2__sub {
+    display: flex;
+
+}
+
+.block2__sub div {
+    font-family: 'Merriweather';
+    font-size: 54px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #313131;
+
+}
+
+.block2__sRow {
+    display: flex;
+    flex-direction: column;
+}
+
+.block2__sRow div {
+    padding-left: 20px;
+    padding-top: 5px;
+    font-family: 'Golos Text';
+    font-size: 20px;
+    line-height: 120%;
+    text-transform: none;
+    /* or 24px */
+    color: #3057A2;
+
+}
+
+.block2__row {
+    display: flex;
+}
+
+.block2__top {
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.block2__card {
+    position: relative;
+    margin-bottom: 20px;
+    width: 394px;
+    height: 112px;
+    display: flex;
+    background: url('images/image 33.png');
+}
+
+.block2__card::before {
+    content: '';
+    position: absolute;
+    width: 394px;
+    height: 112px;
+    top: 0;
+    left: 0;
+    background: url('images/Cooper Union Stamp Paper.png');
+    z-index: 1;
+}
+
+.block2__num {
+    padding: 0 3px 7px 7px;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: #FFFFFF;
+    font-family: 'Golos Text';
+    font-size: 20px;
+z-index: 2;
+
+}
+
+.block2__cardTxt {
+    padding: 20px;
+    width: 302px;
+    font-family: 'Golos Text';
+    font-size: 20px;
+    line-height: 120%;
+    color: #313131;
+    line-height: 24px;
+z-index: 2;
+}
+
+.block2__topR {
+    position: relative;
+    width: 390px;
+    height: 244px;
+    display: flex;
+    background: url('images/image 33.png');
+
+}
+
+.block2__topR::before {
+    content: '';
+    position: absolute;
+    width: 391px;
+    height: 245px;
+    top: 0;
+    left: 0;
+    background: url('images/Cooper Union Stamp Paper.png');
+    z-index: 1;
+
+}
+
+.block2__topR .block2__cardTxt {
+    height: 144px;
+}
+
+.block2__card2 {
+    width: 803px;
+    height: 136px;
+    margin-left: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.block2__card2::before {
+    content: '';
+    position: absolute;
+    width: 803px;
+    height: 136px;
+    top: 0;
+    left: 0;
+    background: url('images/Cooper Union Stamp Paper.png');
+    z-index: 1;
+
+}
+
+.before::before {
+    content: '';
+    width: 376px;
+    height: 250px;
+    background: url('images/Mask group (7).png');
+    position: absolute;
+    top: -100px;
+    right: -40px;
+    z-index: 2;
+}
+
+.block2__card2 .block2__cardTxt {
+    width: 446px;
+}
+
+.block2__card1 {
+    height: 136px;
+}
+
+.block2__card1::before {
+    content: '';
+    position: absolute;
+    width: 394px;
+    height: 136px;
+    top: 0;
+    left: 0;
+    background: url('images/Cooper Union Stamp Paper.png');
+    z-index: 1;
+
+}
+
+.block3 {
+    padding-top: 200px;
+    padding-top: 140px;
+}
+
+.block3__row {
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block3__title {
+    font-family: 'Merriweather';
+    font-size: 54px;
+    line-height: 120%;
+    /* identical to box height, or 65px */
+    text-transform: uppercase;
+    color: #313131;
+}
+
+.block3__anime {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block3_arrow {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    border-radius: 50%;
+    background: #313131;
+    color: #FFFFFF;
+
+}
+
+.block3__content {
+    display: flex;
+    margin-right: 20px;
+    transition: all 0.5s;
+    text-align: center;
+}
+
+.block3__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+    margin-left: 40px;
+    width: 394px;
+    height: 462px;
+    transition: transform 0, 5s;
+}
+
+.block3__img {
+    padding-bottom: 28px;
+}
+
+.block3__cardT {
+    padding-bottom: 10px;
+    font-family: 'Golos Text';
+    font-size: 24px;
+    line-height: 120%;
+    color: #313131;
+}
+
+.block3__cardS {
+    font-family: 'Golos Text';
+    font-size: 20px;
+    line-height: 120%;
+    color: #313131;
+    opacity: 0.6;
+
+}
+
+.block3__btn {
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 5px;
+    gap: 10px;
+    width: 113px;
+    height: 35px;
+    border: 1px solid #3057A2;
+    border-radius: 62px;
+    font-family: 'Golos Text';
+    font-size: 16px;
+    color: #3057A2;
+}
+
+.slider {
+    width: 1200px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.block4__ul {
+    margin-top: 140px;
+    display: flex;
+    justify-content: space-between;
+    width: 2335px;
+    height: 60px;
+    background: #F54932;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-size: 22px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    align-items: center;
+}
+
+.block5__ul {
+    display: flex;
+    justify-content: space-between;
+    width: 2335px;
+    height: 60px;
+    background: #F54932;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-size: 22px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    align-items: center;
+    transform: all 0.2s;
+}
+
+.block5__ul li {
+    transform: all 0.2s;
+}
+
+footer {
+    background: #E9DED4;
+
+}
+
+.footer {
+    padding-top: 40px;
+    padding-bottom: 72px;
+    font-family: 'Golos Text';
+    font-size: 16px;
+    line-height: 120%;
+    color: #313131;
+    opacity: 0.6;
+
+}
